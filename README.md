@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Objectif
+L'objectif de ce projet est de réaliser un lecteur de radio en utilisant reactjs. Ce lecteur doit permettre de :
+<ul>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  </ul>
+<li>afficher la liste des radios disponibles ;<li>
+<li>à la sélection de l'une des radios
+  <ul>
+    <li>afficher ses détails, tout en conservant la liste</li>
+<li>déclencher la lecture du flux. Si un flux était déjà en cours, celui-ci est arrêté et le nouveau flux est lu à sa place. L'utilisateur doit être informé lorsque le flux est en cours de chargement. Il doit également avoir la possibilité de mettre en pause et redémarrer le flux avec un bouton dédié à cela. Vous ne devez pas utiliser les boutons de control par défaut de la balise audio.</li>
+  </ul></li></ul>
+Afin de simplifier l'utilisation du lecteur, l'utilisateur doit pouvoir utiliser un système de tags pour filtrer les radios disponibles. Il doit être possible de sélectionner/désélectionner un tag ou tous les tags d'un coup. La modification de la sélection des tags ne doit pas avoir d'incidence sur la radio actuellement lue.
+<br><br>
+Pour avoir une idée plus précise, vous pouvez manipuler directement l'application qui vous a été présentée en suivant ce lien.
 
-## Available Scripts
+# Bonus
+En plus des éléments présenté ci-dessus, je vous invite à améliorer le système de filtre par tag. Vous pouvez par exemple ajouter une recherche à l'aide d'un champ texte, soit sur les tags, soit sur les noms de radio, voir les deux.
 
-In the project directory, you can run:
+N'hésitez pas à modifier le fichier qui contient la liste des radios pour améliorer le système de tags. Attention cependant à ce que cela ne constitue pas votre seul travail.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Informations utiles
+Afin de ne pas perdre trop de temps, je vous invite à regarder plus précisément les éléments suivants :
+<ul>
+  <li>Element non managé dans react (cf. attribut "ref" dans la documentation officielle).</li>
+<li>Element audio html5, et en particulier les événements associés (cf. documentation sur le site de Mozilla).</li>
+<ul>
